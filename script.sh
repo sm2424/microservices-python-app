@@ -34,7 +34,7 @@ sudo apt update
 sudo apt install python3 -y
 
 #install postgresql
-#!/bin/bash
+
 # Update the package list and install PostgreSQL
 sudo apt update
 sudo apt install -y postgresql postgresql-contrib
