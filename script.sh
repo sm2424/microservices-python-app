@@ -1,9 +1,6 @@
-#install docker
+#!/bin/bash
 sudo apt-get update
-sudo apt-get install docker.io -y
-sudo usermod -aG docker ubuntu  
-newgrp docker
-sudo chmod 777 /var/run/docker.sock
+
 
 # Install Terraform
 sudo apt install wget -y
@@ -52,5 +49,11 @@ sudo apt install mongodb-org -y
 sudo systemctl enable --now mongod
 sudo systemctl status mongod
 mongod --version
+
+#install docker
+sudo apt-get install docker.io -y
+sudo usermod -aG docker ubuntu  
+newgrp docker
+sudo chmod 777 /var/run/docker.sock
 
 
